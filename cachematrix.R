@@ -4,7 +4,7 @@
 ## This function creates a special "matrix" object that can cache its inverse.
 ##it's a list containing a function to set the value of the matrix,
 ##get the value of matrix, set the value of inverse and get the value of inverse
-library(MASS)
+library(MASS) #to use the ginv function in MASS package for non-squre inverse.
 makeCacheMatrix <- function(x = matrix()) {
         invs <-NULL
         #set the value of matrix
